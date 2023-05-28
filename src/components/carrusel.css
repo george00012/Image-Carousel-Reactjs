@@ -1,0 +1,62 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
+
+.slide {
+    grid-area: 1/2;
+}
+
+.row {
+    font-size: 3rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.imagen {
+    border-radius: 0.7rem;
+}
+
+.left-row {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.right-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+@media (max-width: 767px) {
+    .row {
+        font-size: 1.6rem;
+    }
+
+    .imagen {
+        width: 20rem;
+        height: 22rem;
+        background-size: cover;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .row {
+        font-size: 2.2rem;
+    }
+
+    .imagen {
+        width: 37rem;
+        height: 40rem;
+        background-size: cover;
+    }
+}
+
+@media (min-width: 1024px) {
+    .imagen {
+        width: 45rem;
+        height: 40rem;
+        background-size: cover;
+    }
+}
